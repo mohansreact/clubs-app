@@ -18,7 +18,7 @@ var commentRoutes   =  require("./routes/comments"),
 
 // mongoose.Promise = global.Promise;
 // mongoose.connect("mongodb://localhost/yelp_clubs",{ useNewUrlParser: true });
-mongoose.connect("mongodb://mohan:mohan@clubs-shard-00-00-ycv6g.mongodb.net:27017,clubs-shard-00-01-ycv6g.mongodb.net:27017,clubs-shard-00-02-ycv6g.mongodb.net:27017/test?ssl=true&replicaSet=Clubs-shard-0&authSource=admin&retryWrites=true", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://mohan:mohan@clubs-ycv6g.mongodb.net/test?retryWrites=true", { useNewUrlParser: true });
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
