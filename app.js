@@ -17,7 +17,7 @@ var commentRoutes   =  require("./routes/comments"),
 
 
 // mongoose.Promise = global.Promise;
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect(process.env.DATABASEURL,{ useNewUrlParser: true });
 // mongoose.connect("mongodb://mohan123:mohan123@clubs-shard-00-00-ycv6g.mongodb.net:27017,clubs-shard-00-01-ycv6g.mongodb.net:27017,clubs-shard-00-02-ycv6g.mongodb.net:27017/test?ssl=true&replicaSet=Clubs-shard-0&authSource=admin&retryWrites=true", { useNewUrlParser: true });
 
 
